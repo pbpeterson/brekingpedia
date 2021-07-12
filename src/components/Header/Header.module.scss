@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  font-size: 2.185rem;
+  font-family: 'Times New Roman', Times, serif;
+  word-spacing: 2px;
+
+  .element {
+    position: relative;
+    font-weight: 700;
+    padding: 0 5px;
+    background: linear-gradient(#015339, #006c32);
+    margin-right: 2px;
+    font-family: 'Raleway', sans-serif;
+
+    span {
+      position: absolute;
+      font-size: 0.5rem;
+      top: 2;
+      right: 2px;
+    }
+  }
+}
