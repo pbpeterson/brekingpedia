@@ -2,6 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: showHeader 1s forwards;
+
+  nav {
+    a + a {
+      margin-left: 20px;
+    }
+
+    a {
+      font-weight: 700;
+      transition: color 0.2s ease-in;
+      &:hover {
+        color: #03b152;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .link {
@@ -23,5 +43,38 @@
       top: 2;
       right: 2px;
     }
+  }
+}
+
+@media (max-width: 30rem) {
+  .header {
+    flex-direction: column;
+
+    nav {
+      margin-top: 50px;
+
+      a {
+        font-family: 'Raleway', sans-serif;
+        border: 3px solid #fff;
+        border-radius: 8px;
+        padding: 10px 15px;
+
+        &:hover {
+          color: #03b152;
+          border-color: #33b152;
+        }
+      }
+    }
+  }
+}
+
+@keyframes showHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

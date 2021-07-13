@@ -1,0 +1,58 @@
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  animation: showHome 3s forwards;
+}
+
+.main {
+  margin-top: 60px;
+  h1 {
+    max-width: 700px;
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+
+    span {
+      color: #03b152;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    background: #03b152;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.385rem;
+    font-weight: 700;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 40rem) {
+  .main {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@keyframes showHome {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

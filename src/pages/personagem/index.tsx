@@ -1,4 +1,4 @@
-export function Personagem(){
+export default function Personagem(){
   return(
     <div>Personagem</div>
   )
