@@ -1,0 +1,30 @@
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  animation: showChars 3s;
+
+  div {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    a {
+      img {
+        max-width: 100%;
+        width: 300px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+@keyframes showChars {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,8 +1,10 @@
+import { useRouter } from 'next/dist/client/router'
 import Link from 'next/link'
 
 import styles from './Header.module.scss'
 
 export function Header(){
+
   return(
     <header className={`${styles.header} ${styles.container}`}>
       <Link href='/'>
